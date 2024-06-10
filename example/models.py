@@ -4,8 +4,8 @@ from django.db import models
 class AModel1(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    modified = models.DateTimeField(auto_now=True)
-    created = models.DateTimeField(auto_now_add=True)
+    modified1 = models.DateTimeField(auto_now=True)
+    created1 = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
@@ -14,8 +14,8 @@ class AModel1(models.Model):
 class AModel2(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    modified = models.DateTimeField(auto_now=True)
-    created = models.DateTimeField(auto_now_add=True)
+    modified2 = models.DateTimeField(auto_now=True)
+    created2 = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
@@ -24,8 +24,8 @@ class AModel2(models.Model):
 class AModel3(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    modified = models.DateTimeField(auto_now=True)
-    created = models.DateTimeField(auto_now_add=True)
+    modified3 = models.DateTimeField(auto_now=True)
+    created3 = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
@@ -34,8 +34,8 @@ class AModel3(models.Model):
 class AModel4(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    modified = models.DateTimeField(auto_now=True)
-    created = models.DateTimeField(auto_now_add=True)
+    modified4 = models.DateTimeField(auto_now=True)
+    created4 = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
@@ -44,8 +44,8 @@ class AModel4(models.Model):
 class AModel5(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    modified = models.DateTimeField(auto_now=True)
-    created = models.DateTimeField(auto_now_add=True)
+    modified5 = models.DateTimeField(auto_now=True)
+    created5 = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name

@@ -58,32 +58,36 @@ class AbstractAdmin(admin.ModelAdmin):
                 except FieldDoesNotExist:
                     pass
 
+    formfield_overrides = {
+        DateTimeField: {'widget': admin.widgets.AdminSplitDateTime},
+    }
+
 
 @admin.register(AModel1)
 class ExampleAdmin1(AbstractAdmin):
     model = AModel1
-    readonly_fields = ['modified', 'created']
+    readonly_fields = ['modified1', 'created1']
 
 
 @admin.register(AModel2)
 class ExampleAdmin2(AbstractAdmin):
     model = AModel2
-    readonly_fields = ['modified', 'created']
+    readonly_fields = ['modified2', 'created2']
 
 
 @admin.register(AModel3)
 class ExampleAdmin3(AbstractAdmin):
     model = AModel3
-    readonly_fields = ['modified', 'created']
+    readonly_fields = ['modified3', 'created3']
 
 
 @admin.register(AModel4)
 class ExampleAdmin4(AbstractAdmin):
     model = AModel4
-    readonly_fields = ['modified', 'created']
+    readonly_fields = ['modified4', 'created4']
 
 
 @admin.register(AModel5)
 class ExampleAdmin5(AbstractAdmin):
     model = AModel5
-    readonly_fields = ['modified', 'created']
+    readonly_fields = ['modified5', 'created5']
