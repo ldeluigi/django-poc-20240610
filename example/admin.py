@@ -58,10 +58,6 @@ class AbstractAdmin(admin.ModelAdmin):
                 except FieldDoesNotExist:
                     pass
 
-    formfield_overrides = {
-        DateTimeField: {'widget': admin.widgets.AdminSplitDateTime},
-    }
-
 
 @admin.register(AModel1)
 class ExampleAdmin1(AbstractAdmin):
